@@ -58,10 +58,16 @@ const HomePage = ({
         <div className={styles.price}>
           ETH: {symbol[language]}{(+price[language]).toLocaleString()}
         </div>
-        <img
-          src={require(`@/assets/images/GASNOW_${theme}.svg`)}
-          alt="GASNOW"
-        />
+        <div>
+          <a
+            href="https://www.gasnow.org/"
+            target="_blank">
+              <img
+                src={require(`@/assets/images/GASNOW_${theme}.svg`)}
+                alt="GASNOW"
+              />
+          </a>
+        </div>
         <Link to="/setting">
           <img
             src={require(`@/assets/images/setting_${theme}.svg`)}
